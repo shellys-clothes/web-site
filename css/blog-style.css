@@ -167,3 +167,25 @@ body {
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .blog-container,
+  .container,
+  .posts-grid,
+  .blog-posts {
+    padding: 1rem !important;
+  }
+
+  .post-card h2 {
+    font-size: 1rem;
+  }
+
+  .post-card .excerpt {
+    font-size: 0.85rem;
+  }
+
+  .posts-grid,
+  .blog-posts {
+    grid-template-columns: 1fr !important;
+  }
+}
