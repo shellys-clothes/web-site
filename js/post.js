@@ -19,3 +19,5 @@ fetch(`https://clothes.sustainatrip.tur.br/wp-json/wp/v2/posts/${postId}?_embed`
     postContent.innerHTML = '<p>Erro ao carregar o post.</p>';
     console.error(err);
   });
+
+  
