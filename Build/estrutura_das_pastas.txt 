@@ -1,0 +1,40 @@
+shellysclothes/
+│
+├── index.html                  ← Página inicial (manifesto / vitrine do projeto)
+├── catalogo.html               ← Página de catálogo de roupas/ideias da Shelly
+├── blog.html                   ← Página principal do blog ou lista de devlogs
+│
+├── /posts/                     ← Posts individuais do blog (em HTML ou Markdown)
+│   ├── 01-criando-juntas.html
+│   ├── 02-primeiro-look.html
+│   └── ...
+│
+├── /img/                       ← Imagens do site
+│   ├── logo.png
+│   ├── shelly-desenhos/
+│   ├── looks/
+│   └── blog/
+│
+├── /js/                        ← Scripts JavaScript
+│   ├── main.js                 ← Scripts gerais do site
+│   └── blog.js                 ← Scripts específicos para o blog
+│
+├── /css/                       ← Estilos CSS
+│   ├── style.css               ← Estilo principal do site
+│   └── blog.css                ← Estilo do blog
+│
+├── /assets/                    ← Arquivos diversos (PDFs, mockups, docs)
+│   └── manifesto-shelly.pdf
+│
+├── /experimentos/             ← Testes de layout, protótipos e ideias soltas
+│   ├── grid-looks.html
+│   ├── hover-effects.html
+│   └── shelly-testes.html
+│
+├── /components/               ← Blocos reutilizáveis (futuramente, se modularizar)
+│   ├── header.html
+│   ├── footer.html
+│   └── card-look.html
+│
+└── README.md                  ← Manifesto + descrição do projeto
+

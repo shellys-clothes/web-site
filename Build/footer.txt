@@ -1,0 +1,144 @@
+<style>
+  /* --- Rodapé principal --- */
+  .shelly-footer {
+    background-color: #fff8f3;
+    color: #333;
+    padding: 3rem 2rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    border-top: 1px solid #eee;
+  }
+
+  .shelly-footer .footer-column {
+    flex: 1 1 220px;
+  }
+
+  .shelly-footer .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+
+  .shelly-footer .logo span {
+    color: #ff69b4;
+  }
+
+  .shelly-footer p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+
+  .shelly-footer h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+
+  .shelly-footer a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+
+  .shelly-footer a:hover {
+    color: #ff69b4;
+  }
+
+  .shelly-footer .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .shelly-footer .social-icons a {
+    font-size: 1.2rem;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+
+  .shelly-footer .social-icons a:hover {
+    color: #ff69b4;
+  }
+
+  /* --- Rodapé inferior --- */
+  .shelly-footer-bottom {
+    background-color: #fff8f3;
+    border-top: 1px solid #eee;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+  }
+
+  .shelly-footer-bottom span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: #bbb;
+  }
+
+  /* --- Responsividade --- */
+  @media (max-width: 768px) {
+    .shelly-footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .shelly-footer .footer-column {
+      flex: unset;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .shelly-footer .social-icons {
+      justify-content: center;
+    }
+  }
+</style>
+
+<footer class="shelly-footer">
+  <div class="footer-column">
+    <div class="logo">Shelly's <span>Clothes</span></div>
+    <p>Moda feita com alma e atitude. Peças que contam histórias.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <h4>Links Rápidos</h4>
+    <a href="#">Home</a>
+    <a href="#">Coleções</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </div>
+
+  <div class="footer-column">
+    <h4>Contato</h4>
+    <a href="mailto:contato@shellysclothes.com">contato@shellysclothes.com</a>
+    <a href="#">WhatsApp: (11) 99999-9999</a>
+    <a href="#">Rua Fashionista, 123 - SP</a>
+  </div>
+</footer>
+
+<div class="shelly-footer-bottom">
+  © 2025 Shelly’s Clothes. Todos os direitos reservados.
+  <span>Desenvolvido por Kenner com ❤️ e tecnologia sustentável.</span>
+</div>
+
+<!-- FONT AWESOME CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+

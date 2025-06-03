@@ -1,0 +1,155 @@
+<!-- HEADER Shelly's Clothes -->
+<header class="shelly-header">
+  <!-- Logo -->
+  <div class="shelly-logo">Shelly's <span>Clothes</span></div>
+
+  <!-- Botão de menu mobile -->
+  <div class="shelly-menu-toggle" id="menu-toggle">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- Navegação principal -->
+  <nav class="shelly-nav" id="shelly-nav">
+    <a href="#">Home</a>
+    <a href="#">Coleções</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <!-- Ícones de usuário e sacola -->
+  <div class="shelly-icons">
+    <i class="fas fa-user"></i>
+    <i class="fas fa-shopping-bag"></i>
+  </div>
+</header>
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+  /* Fontes */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+  /* Estilo geral do header */
+  .shelly-header {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+  }
+
+  /* Logo estilizada */
+  .shelly-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #111;
+  }
+
+  .shelly-logo span {
+    color: #ff69b4;
+  }
+
+  /* Navegação principal */
+  .shelly-nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .shelly-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .shelly-nav a:hover {
+    color: #ff69b4;
+  }
+
+  /* Ícones laterais */
+  .shelly-icons i {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .shelly-icons i:hover {
+    color: #ff69b4;
+  }
+
+  /* Botão de menu mobile */
+  .shelly-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .shelly-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  /* Animação para transformar em X */
+  .shelly-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .shelly-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .shelly-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .shelly-menu-toggle {
+      display: flex;
+    }
+
+    .shelly-nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: #fff;
+      padding: 1rem 2rem;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .shelly-nav a {
+      padding: 0.5rem 0;
+    }
+
+    .shelly-nav.show {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+  // Mobile menu toggle com animação
+  const toggleBtn = document.getElementById('menu-toggle');
+  const nav = document.getElementById('shelly-nav');
+
+  toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
+    nav.classList.toggle('show');
+  });
+</script>
+

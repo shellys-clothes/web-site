@@ -1,0 +1,340 @@
+<!-- HERO superior da pagina -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+  .shelly-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 4rem 2rem;
+    background-color: #fff8f3;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .hero-text {
+    flex: 1 1 400px;
+    padding-right: 2rem;
+  }
+
+  .hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  .hero-text .cta-btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .hero-text .cta-btn:hover {
+    background-color: #e0559e;
+  }
+
+  .hero-image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 768px) {
+    .shelly-hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-text {
+      padding-right: 0;
+    }
+  }
+</style>
+
+<section class="shelly-hero">
+  <div class="hero-text">
+    <h1>Vista o que te empodera</h1>
+    <p>Moda feita com alma, atitude e propósito. Descubra a nova coleção da Shelly e transforme seu estilo.</p>
+    <a href="#" class="cta-btn">Ver Coleção</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://via.placeholder.com/500x600.png?text=Sua+Imagem+Aqui" alt="Modelo usando Shelly's Clothes">
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Categorias em Destaque -->
+
+
+<style>
+  .shelly-categories {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .shelly-categories h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .category-card {
+    width: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .category-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .category-card p {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #333;
+  }
+</style>
+
+<section class="shelly-categories">
+  <h2>Categorias em Destaque</h2>
+  <div class="category-grid">
+    <div class="category-card">
+      <img src="https://via.placeholder.com/200x180.png?text=Streetwear" alt="Streetwear">
+      <p>Streetwear</p>
+    </div>
+    <div class="category-card">
+      <img src="https://via.placeholder.com/200x180.png?text=Casual+Chic" alt="Casual Chic">
+      <p>Casual Chic</p>
+    </div>
+    <div class="category-card">
+      <img src="https://via.placeholder.com/200x180.png?text=Eco+Friendly" alt="Eco Friendly">
+      <p>Eco Friendly</p>
+    </div>
+    <div class="category-card">
+      <img src="https://via.placeholder.com/200x180.png?text=Infantil" alt="Infantil">
+      <p>Infantil</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Destaques da Coleção -->
+
+
+<style>
+  .shelly-featured {
+    padding: 4rem 2rem;
+    background-color: #fff8f3;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .shelly-featured h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .product-card {
+    width: 220px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-info h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+  }
+
+  .product-info p {
+    margin: 0.5rem 0 0;
+    color: #ff69b4;
+    font-weight: bold;
+  }
+</style>
+
+<section class="shelly-featured">
+  <h2>Destaques da Coleção</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x260.png?text=Vestido+Floral" alt="Vestido Floral">
+      <div class="product-info">
+        <h3>Vestido Floral</h3>
+        <p>R$ 129,90</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x260.png?text=Cropped+Neon" alt="Cropped Neon">
+      <div class="product-info">
+        <h3>Cropped Neon</h3>
+        <p>R$ 79,90</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x260.png?text=Moletom+Oversized" alt="Moletom Oversized">
+      <div class="product-info">
+        <h3>Moletom Oversized</h3>
+        <p>R$ 149,90</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PESSOAL SHELLY -->
+
+<!-- 🔥 LOOK DO DIA -->
+<section style="padding: 4rem 2rem; background: #fff8f3; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Look do Dia ✨</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">A Shelly mostra o look preferido dela da semana. Inspiração real pra arrasar no rolê ou na escola.</p>
+  <img src="https://via.placeholder.com/600x400?text=Look+da+Shelly" alt="Look do dia" style="width: 100%; max-width: 600px; border-radius: 1rem; box-shadow: 0 8px 20px rgba(0,0,0,0.1); margin-top: 2rem;">
+</section>
+
+<!-- 🔥 ESTILO DA SHELLY -->
+<section style="padding: 4rem 2rem; background: #fff; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">O Estilo da Shelly 👗</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Descubra as peças favoritas da Shelly e como ela cria seus looks com personalidade.</p>
+  <blockquote style="font-style: italic; color: #ff69b4; margin-top: 2rem;">“Eu amo combinar coisas fofas com algo street. Amo tênis rosa, jeans baggy e acessórios coloridos!” – Shelly 💕</blockquote>
+</section>
+
+<!-- 🔥 PROVE & POSTE -->
+<section style="padding: 4rem 2rem; background: #f0f8ff; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Prove & Poste 📸</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Comprou e amou? Poste seu look no Instagram com a hashtag <strong>#LookShelly</strong> e apareça aqui no nosso mural fashionista!</p>
+  <img src="https://via.placeholder.com/600x300?text=Fotos+das+Clientes" alt="Fotos de clientes" style="width: 100%; max-width: 600px; border-radius: 1rem; margin-top: 2rem;">
+</section>
+
+<!-- 💡 MINI DICAS DE MODA -->
+<section style="padding: 4rem 2rem; background: #fffdf7; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Dicas de Moda da Shelly 💡</h2>
+  <ul style="list-style: none; padding: 0; max-width: 600px; margin: 2rem auto 0; color: #444;">
+    <li style="margin-bottom: 1.5rem;">✨ Use acessórios pra transformar um look simples em fashion</li>
+    <li style="margin-bottom: 1.5rem;">🎨 Misture cores sem medo! Rosa com verde? Sim, miga!</li>
+    <li style="margin-bottom: 1.5rem;">👟 Tênis estilosos combinam até com vestido, juro!</li>
+  </ul>
+</section>
+
+<!-- 💡 GLOSSÁRIO FASHION -->
+<section style="padding: 4rem 2rem; background: #ffffff; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Glossário Fashion 💅</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Entenda os termos mais usados no mundo da moda.</p>
+  <ul style="text-align: left; max-width: 600px; margin: 2rem auto 0; color: #444;">
+    <li><strong>Oversized:</strong> Peças maiores que o corpo, super confortáveis.</li>
+    <li><strong>Vintage:</strong> Roupa com cara de antiga, mas super estilosa.</li>
+    <li><strong>Crop Top:</strong> Blusinha mais curta, que mostra a barriga.</li>
+  </ul>
+</section>
+
+<!-- 💡 QUIZ INTERATIVO (placeholder) -->
+<section style="padding: 4rem 2rem; background: #f5f5ff; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Descubra seu Estilo com Shelly 🎉</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Faça nosso quiz divertido e descubra se você é mais comfy, chic, street ou romântica!</p>
+  <a href="#" style="display: inline-block; margin-top: 2rem; padding: 1rem 2rem; background: #ff69b4; color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold;">Fazer o Quiz</a>
+</section>
+
+<!-- 📣 SHELLY SQUAD -->
+<section style="padding: 4rem 2rem; background: #fffafc; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Clube Shelly’s Squad 💖</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Faça parte do nosso clube! Descontos exclusivos, missões fashions e recompensas incríveis.</p>
+  <a href="#" style="display: inline-block; margin-top: 2rem; padding: 1rem 2rem; background: #ff69b4; color: #fff; border-radius: 30px; text-decoration: none; font-weight: bold;">Entrar no Clube</a>
+</section>
+
+<!-- 📣 BLOG / SHELLY DIÁRIO -->
+<section style="padding: 4rem 2rem; background: #fdf6f9; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Shelly Diário 📝</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Acompanhe as aventuras da Shelly como mini empresária! Dicas, bastidores, estudos e sonhos 💭</p>
+  <a href="#" style="color: #ff69b4; text-decoration: underline;">Ver todas as postagens</a>
+</section>
+
+<!-- 📣 DEPOIMENTOS DAS BFFs -->
+<section style="padding: 4rem 2rem; background: #ffffff; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">O que as BFFs estão dizendo 💬</h2>
+  <div style="max-width: 600px; margin: 2rem auto;">
+    <p style="color: #333;">“Amei meu moletom! Super fofooo 💖” – <strong>Larissa, 12 anos</strong></p>
+    <p style="color: #333;">“Comprei um cropped da Shelly e agora quero todos!!! 😍” – <strong>Manu, 11 anos</strong></p>
+  </div>
+</section>
+
+<!-- 🌱 MODA CONSCIENTE -->
+<section style="padding: 4rem 2rem; background: #eaffea; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Moda com Consciência 🌱</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #333;">Na Shelly’s Clothes a gente cuida do estilo e do planeta. Peças com tecidos reciclados, parceiros locais e produção consciente.</p>
+</section>
+
+<!-- 🌱 UPCYCLING COM ESTILO -->
+<section style="padding: 4rem 2rem; background: #ffffff; font-family: 'Open Sans', sans-serif; text-align: center;">
+  <h2 style="font-size: 2.5rem; font-family: 'Playfair Display', serif;">Upcycling com Estilo 🔄</h2>
+  <p style="max-width: 600px; margin: 1rem auto; color: #555;">Transforme peças antigas em looks incríveis! A Shelly ensina jeitos criativos de reaproveitar roupas com estilo e consciência.</p>
+  <img src="https://via.placeholder.com/600x300?text=Upcycling+Ideias" alt="Upcycling" style="width: 100%; max-width: 600px; border-radius: 1rem; margin-top: 2rem;">
+</section>
+
+
